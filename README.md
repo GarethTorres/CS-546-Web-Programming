@@ -1,3 +1,3 @@
-# CS-546-Web-Programming--
+# CS-546-Web-Programming
 
 Assignments
