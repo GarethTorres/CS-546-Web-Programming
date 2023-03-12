@@ -1,0 +1,17 @@
+{
+    "name": "cs-546-lab-4",
+    "version": "1.0.0",
+    "description": "My lab 4 module",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Guizhi Xu 20008770",
+    "license": "ISC",
+    "dependencies": {
+        "mongodb": "^6.0.4",
+        "mongo-collections": "^1.0.0",
+        "mongodb-objectid": "^1.0.0"
+    }
+}
