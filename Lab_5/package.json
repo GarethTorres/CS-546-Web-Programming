@@ -1,0 +1,15 @@
+{
+    "name": "cs-546-lab-5",
+    "version": "1.0.0",
+    "description": "My lab 5 module",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Guizhi Xu 20008770",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}
