@@ -1,0 +1,63 @@
+{{!
+
+This page will respond with a valid HTML document. The title of the document should be "Venue Finder". You should have
+the title set as the <title> element of the HTML document and as an h1 in your document.
+
+    Your page should reference a CSS file, /public/css/main-styles.css; this file should have at least 5 rulesets that
+    apply
+    to this page; these 5 rules can also apply to elements across all of your pages, or be unique to this page.
+
+    You should have a main element, and inside of the main element have a p element with a brief (2-3 sentence
+    description) of what your website does.
+
+    Also inside the main element, you will have a form; this form will POST to the /searchvenues route. This form will
+    have an input and a label; the label should properly reference the same id as the input using the for attribute. You
+    should also have an input with a type of submit that submits the form. The input in your form should have a name of
+    searchVenueTerm.
+
+    }}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Venue Finder</title>
+    <!--You should have the title set as the <title> element of the HTML document and as an h1 in your document.-->
+    <link rel="stylesheet" href="/public/css/main-styles.css">
+    <!--Your page should reference a CSS file, /public/css/main-styles.css-->
+  </head>
+  <body>
+    <main>
+        <!--You should have a main element-->
+      <h1>Venue Finder</h1>
+      <!--You should have the title set as the <title> element of the HTML document and as an h1 in your document.-->
+      <p>This is the main page/route of this application will provide a search form to start a search of the API. 
+        You can start a search on this page.
+      </p>
+      <!--and inside of the main element have a p element with a brief (2-3 sentence description) of what your website does.-->
+      <form method="POST" action="/searchvenues" onsubmit="return formchecker();">
+      <!--Also inside the main element, you will have a form; this form will POST to the /searchvenues route. -->
+        <input type="text" id="searchVenueTerm" name="searchVenueTerm">
+        <!--The input in your form should have a name of searchVenueTerm.-->
+        <!--This form will have an input and a label-->
+        <label for="searchVenueTerm">you can search from here</label>
+        <!--This form will have an input and a label; the label should properly reference the same id as the input using the for attribute. -->
+        <!--This form will have an input and a label-->
+        <input type="submit" value="Submit">
+        <!--You should also have an input with a type of submit that submits the form.-->
+      </form>
+      <p id="error" class="error" style="display:none">Please fill in the blank</p>
+    </main>
+    <script>
+function formchecker() {
+  var searchVenueTerm = document.getElementById("searchVenueTerm").value;
+  if (searchVenueTerm.trim() === "") {
+    document.getElementById("error").style.display = "Blocked";
+    document.getElementById("error").textContent = "Please fill in the blank";
+    return false;
+  }
+  return true;
+}
+    </script>
+  </body>
+</html>

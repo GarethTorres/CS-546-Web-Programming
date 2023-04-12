@@ -1,0 +1,23 @@
+{{! 
+This page wil be rendered if the user does not input text into their form, make sure to give a response status code of 400 on the page, and render a valid HTML page with a paragraph class called 'error'; this paragraph should describe the error.
+}}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Error occoured!</title>
+    <link rel="stylesheet" href="/public/css/main-styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Error</h1>
+    </header>
+    <main>
+      <p class="error">The user didn't fill any texts into the blank</p>
+    </main>
+    <div>
+      <a href="/">Back to main page</a>
+    </div>
+  </body>
+</html>

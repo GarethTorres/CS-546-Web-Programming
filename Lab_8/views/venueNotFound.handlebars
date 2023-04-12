@@ -1,0 +1,24 @@
+{{!
+This page will be rendered when no matches are found in 'POST http://localhost:3000/searchvenues'.
+You will render this page with the HTML paragraph defined in the lab assignment.
+}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No venues found</title>
+    <link rel="stylesheet" href="/public/css/main-styles.css">
+</head>
+<body>
+    <header>
+        <h1>No venues were found</h1>
+    </header>
+    <main>
+        <p class="not_found">No validate results found for {{searchVenueTerm}}.</p>
+    </main>
+    <div>
+        <a href="/">Back to main page</a>
+    </div>
+</body>
+</html>
