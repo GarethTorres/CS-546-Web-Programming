@@ -1,0 +1,75 @@
+/*
+You will style your page using at least 5 CSS selectors for general CSS styling. You will place the CSS in its own file. 
+*/
+
+body {
+    font-family: 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #efc1e5;
+    color: #26ecc1;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #2020d1;
+  }
+  
+  textarea {
+    width: 85%;
+    height: 280px;
+    resize: none;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 2.5px;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #0070c9;
+    color: white;  
+}
+  
+  button:hover {
+    background-color: #16b83c;
+    color: #1d1d1f;
+  }
+  
+  #results {
+    margin-top: 40px;
+  }
+
+  dt {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: #1d1d1f;
+  }
+  
+  dl {
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 15px;
+    background-color: #b9adad;
+    border: 1px solid #877979;
+  }
+  
+  dd {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: #1d1d1f;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer li {
+    padding: 0 10px;
+    color: #2e2e42;
+  }
+  
+  

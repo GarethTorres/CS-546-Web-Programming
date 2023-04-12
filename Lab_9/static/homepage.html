@@ -1,0 +1,47 @@
+<!-- 
+A header tag, with an h1 naming your site, with a title for your page. 
+A footer with your name, student ID, and any other info about yourself you wish to include
+A single div with an id of results.  
+Your page will have a form with the following:
+
+A label with a for attribute referencing your input
+A textarea element with a name and id of text_input
+A button to submit the form
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Client-Side Text Analyzer</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Client-Side Text Analyzer</h1>
+    </header>
+    <div class="container">
+
+        <form id="form_for_analyze">
+            <label for="text_input">Please input text</label>
+            <textarea name="text_input" id="text_input"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+    <div id="results"></div>
+    </div>
+
+    <footer>
+        <ul>
+            <li>Guizhi Xu</li>
+            <li>20008770</li>
+        </ul>
+    </footer>
+    <script src="/public/js/main.js"></script>
+</body>
+
+</html>
