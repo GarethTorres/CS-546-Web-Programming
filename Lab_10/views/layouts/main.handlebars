@@ -1,0 +1,45 @@
+{{! This will be your default layout for all handlebars file rendered. This will be inherited by all other templates. }}
+{{! Refer lecture code to learn more on how this works
+don't forget to include your css and your client-side script file references in the layout.
+}}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 10</title>
+  <link rel="stylesheet" href="/public/css/lab10.css">
+
+</head>
+
+<body>
+
+  <nav>
+
+    <h1>Lab 10</h1>
+
+    <a href="../register">Register</a>
+    <a href="../login">Login</a>
+    <a href="../protected">Protected</a>
+    <a href="../admin">Admin</a>
+    <a href="../logout">Logout</a>
+
+  </nav>
+
+  <main>
+
+    <div class="container">
+      {{{body}}}
+    </div>
+
+  </main>
+
+  <script src="/public/js/lab10.js"></script>
+
+</body>
+
+</html>

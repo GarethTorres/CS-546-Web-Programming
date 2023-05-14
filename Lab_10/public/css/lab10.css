@@ -1,0 +1,103 @@
+/* You will create a CSS stylesheet in /public/css/lab10.css; this file should have at least 10 rulesets.  You will need to utilize all 10 rulesets on each of the pages (not every page has to use all 10 rulesets each but all 10 rulesets must be utilized by the various pages in your application).  So you can have some rulesets for one page, some for another page but there needs to be at least 10 total rulesets that are used between all the pages.  */
+  h1 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  }
+
+  h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  
+}
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 20px;
+  }
+  
+  nav h1 {
+    font-size: 1.5rem;
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+
+  a {
+    color: black;
+  }
+
+  label {
+    float: right;
+    margin: 10px;
+  }

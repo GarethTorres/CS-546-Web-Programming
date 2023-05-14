@@ -1,0 +1,12 @@
+{{!--
+
+If the user is logged in , and 'GET /protected' endpoint is called, you will render this view based on the specs.
+
+--}}
+
+{{#if user}}
+  <h2>Welcome, {{user.firstName}}!</h2>
+  <p>You have successfully accessed the protected page.</p>
+{{else}}
+  {{> error errorMessage="You must be logged in to access this page."}}
+{{/if}}

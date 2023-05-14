@@ -1,0 +1,19 @@
+{{!--
+
+If the user is logged in and they are an admin user, and 'GET /admin' endpoint is called, you will render this view
+based on the specs.
+
+
+
+--}}
+
+{{#if user}}
+  {{#ifEquals user.role 'admin'}}
+    <h2>Welcome, {{user.firstName}}!</h2>
+    <p>You have successfully accessed the admin page.</p>
+  {{else}}
+    {{> error errorMessage="You are not authorized to access this page."}}
+  {{/ifEquals}}
+{{else}}
+  {{> error errorMessage="You must be logged in to access this page."}}
+{{/if}}
